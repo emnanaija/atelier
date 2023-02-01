@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>inscription</title>
+</head>
+<body>
+    <hr size="3" noshade>  
+  <h1> inscription</h1>
+  <form method="post" action ="atelier.html">
+ 
+    <table cellspacing="20">
+      <tr>
+        <td>
+    
+    <label>
+       first name* (min 3caracteres)
+    </label></td>
+  <td> <input  placeholder="name" type="text" name="first name" required minlength="3" > <br></td>
+ 
+  </tr>
+
+
+
+
+   
+   <tr>
+    <td>
+      <br><label>
+    last name
+  </label></td>
+<td> <input placeholder=" last name" type="text"   name="last name"  minlength="3" ><br>
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td>
+ <br><label>
+ adresse
+</label><br></td>
+ <td><br><textarea cols="30" rows="8"></textarea><br>
+
+</td>
+</tr>
+
+
+<tr>
+  <td>
+<br><label for="tel">
+phone number*
+ </label></td>
+<td><input placeholder="phone number "type="number" id="tel" name="tel" required >
+<br>
+</td>
+
+<tr>
+  <td>
+<br><label for="monDate"> date of birth</label></td>
+<td><input  placeholder="dd/mm/yy"type="date" name="monDate" min="1940-06-01" max="2023-08-31" step="7" id="monDate"><br>
+</td>
+</tr>
+
+<tr>
+  <td>
+<br><label>
+  password*
+   </label></td>
+<td>
+   <input type="password"   name="password" required pattern=”(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])
+   (?=.*[a-z]).*” ><br>
+  </td>
+  </tr>
+
+
+   <tr>
+    <td>
+   <br><label>
+     confirm password*
+     </label></td>
+  
+    <td><input type="password"   name=" confirm password" required pattern=”(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])
+     (?=.*[a-z]).*” ><br></td> 
+     </tr>
+    
+    </table>
+
+<br><input type="submit" value="submit" onclick="confirm('confirmer')">
+<input type="reset" value="reset">
+
+<tr>
+  <td>
+    <br><label>
+did you read all the instructions
+</label></td>
+<td> <input  type="checkbox"   name=""  ><br>
+</td>
+</tr>
+
+
+
+
+  </form>
+ <a href="" onclick="confirm('hello2a29')" >hello</a>
+
+ <script>
+    //alert("bonjour");
+    //confirm('hello2a29')
+    //prompt("votre nom"," votre");
+ </script>
+
+</body>
+</html>
